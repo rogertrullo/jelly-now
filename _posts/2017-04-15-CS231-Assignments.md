@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## CS231 First Assignment
 
@@ -933,4 +933,3 @@ for i in xrange(10):
 Describe what your visualized SVM weights look like, and offer a brief explanation for why they look they way that they do.
 
 **Your answer:** *fill this in*
-
