@@ -12,8 +12,23 @@ You will find different formats for medical images; with the most known being [D
 DICOM for example is a series of several slice images, while NIFTI only uses one snigle file. Personally I prefer the later since I only have to deal with a single file instead of one folder with several files.
 Now let's say you have one of these images, how do you read it?
 I remember that before I started my PhD I used to work a lot with Matlab, and then I just wanted to keep it that way. So I started to look for ways to read this images. I soon found out that most of the libraries out there were not standard and done by third party users. Although this really comes to preference, I would advise to work with Python instead. There are a couple of reasons for that; first, Python is a free open source language with a huge community online which is growing more than ever. Second, in medical images you will find that there are two main libraries that are all over the place: [ITK](https://itk.org/) and [VTK](http://www.vtk.org/). Both libraries are written in C++ and are designed mainly to work with this language; however, if you are working on research you would probably want to use a scripting language. If that's the case then you're lucky because both libraries have wrappers for python!. In [this](https://pyscience.wordpress.com/) blog you can find some really good tutorials that should help you to start going!
-Another very good reason to work in Python is that, as you probably know, deep learning is getting state of the art results in a lot of fields, one of those being medical image analysis. During my internship I have seen deep learning beating previous methods in a lot of tasks including segmentation, super resolution, diagnosis, landmark detection,...
+Another very good reason to work in Python is that, as you probably know, deep learning is getting state of the art results in a lot of fields, one of those being medical image analysis. Most of the packages used for deep learning are written for python.
+During my internship I have seen deep learning beating previous methods in a lot of tasks including segmentation, super resolution, diagnosis, landmark detection,...
 In this blog I will talk about the libraries that I have used for deep learning, and how I have used them in my research. In particular, I will talk a little about Caffe, Tensorflow and Pytorch.
+Talking about things you'd need for your research in medical imaging is a visualization software. Most people use [ITKSNAP](http://www.itksnap.org/pmwiki/pmwiki.php) or [3DSlicer](https://www.slicer.org/). Personally I use ITKSNAP although it doesn't have all the features of 3DSlicer, it is simpler and does the job. You can visualize most of the formats, having a 3d view of the image, you can overlap segmentation, etc. Here's a pic of ITKSNAP, with a CT image that I use for my research:
+
+![alt text](https://raw.githubusercontent.com/rogertrullo/rogertrullo.github.io/master/images/itksnap_ct.png).
+
+So to wrap up, you'd basically need three things:
+-Python
+-ITKSNAP
+-Images
+
+Now, 
+
+
+
+But first things first, how do we read an image with python? 
 
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
