@@ -42,4 +42,6 @@ npimg=3*(npimg*npimg)
 ctitk_mod=sitk.GetImageFromArray(npimg)
 sitk.WriteImage(ctitk_mod,"path/to/save/image")
 ```
-Would square the image and multiply it by 3. Then I convert it to an ITK image and save the file. Remember when saving the image, ou have to give the full path including the extension. for  example /folder/myimage.nii if you want Nifti.
+Would square the image and multiply it by 3. Then I convert it to an ITK image and save the file. Remember when saving the image, ou have to give the full path including the extension. For  example /folder/myimage.nii if you want Nifti.
+
+This is it for the first post, I hope that you have at least a basic idea on how to start, or where to look for more information. In next posts, I will try to give more details taking as example my own research, where I apply deep learning to do segmentation and image synthesis.
