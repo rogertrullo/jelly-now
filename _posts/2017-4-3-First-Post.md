@@ -46,9 +46,3 @@ Would square the image and multiply it by 3. Then I convert it to an ITK image a
 
 This is it for the first post, I hope that you have at least a basic idea on how to start, or where to look for more information. In next posts, I will try to give more details taking as example my own research, where I apply deep learning to do segmentation and image synthesis.
 
-{% highlight python linenos %}
-import numpy as np
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
