@@ -32,14 +32,14 @@ import numpy as np
 
 itkimg=sitk.ReadImage("path/to/image")
 npimg=sitk.GetArrayFromImage(itkimage)
-print npimg.shape
 ```
 
-
-
-But first things first, how do we read an image with python? 
-
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+first line just reads the image into an  itkimage object. These objects have several operations that are listed in the library website including image proessing, registration, etc. Here I just need the data, and since later will be working on that, I convert it to a numpy array with the second line od code. Pretty easy, isn't it?
+Now that you have the numpy array, you can do all sort of operations, like multiplying by a number, or by another array, adding or substracting, whatever you need!
+For example,
+```python
+npimg=3*(npimg*npimg)
+ctitk_mod=sitk.GetImageFromArray(npimg)
+sitk.WriteImage(ctitk_mod,"path/to/save/image")
+```
+Would square the image and multiply it by 3. Then I convert it to an ITK image and save the file. Remember when saving the image, ou have to give the full path including the extension. for  example /folder/myimage.nii if you want Nifti.
