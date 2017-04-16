@@ -82,7 +82,7 @@ plt.show()
 ```
 
 
-![png](_posts/svm_files/svm_4_0.png)
+![png](https://raw.githubusercontent.com/rogertrullo/rogertrullo.github.io/master/_posts/svm_files/svm_4_0.png)
 
 
 
@@ -174,7 +174,7 @@ plt.show()
 
 
 
-![png](svm_files/svm_7_1.png)
+![png](https://raw.githubusercontent.com/rogertrullo/rogertrullo.github.io/master/_posts/svm_files/svm_7_1.png)
 
 
 
@@ -375,7 +375,7 @@ plt.show()
 ```
 
 
-![png](svm_files/svm_19_0.png)
+![png](https://raw.githubusercontent.com/rogertrullo/rogertrullo.github.io/master/_posts/svm_files/svm_19_0.png)
 
 
 
@@ -892,7 +892,7 @@ plt.show()
 ```
 
 
-![png](svm_files/svm_22_0.png)
+![png](https://raw.githubusercontent.com/rogertrullo/rogertrullo.github.io/master/_posts/svm_files/svm_22_0.png)
 
 
 
@@ -926,7 +926,7 @@ for i in xrange(10):
 ```
 
 
-![png](svm_files/svm_24_0.png)
+![png](https://raw.githubusercontent.com/rogertrullo/rogertrullo.github.io/master/_posts/svm_files/svm_24_0.png)
 
 
 ### Inline question 2:
