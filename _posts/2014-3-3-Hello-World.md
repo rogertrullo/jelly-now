@@ -17,14 +17,23 @@ During my internship I have seen deep learning beating previous methods in a lot
 In this blog I will talk about the libraries that I have used for deep learning, and how I have used them in my research. In particular, I will talk a little about Caffe, Tensorflow and Pytorch.
 Talking about things you'd need for your research in medical imaging is a visualization software. Most people use [ITKSNAP](http://www.itksnap.org/pmwiki/pmwiki.php) or [3DSlicer](https://www.slicer.org/). Personally I use ITKSNAP although it doesn't have all the features of 3DSlicer, it is simpler and does the job. You can visualize most of the formats, having a 3d view of the image, you can overlap segmentation, etc. Here's a pic of ITKSNAP, with a CT image that I use for my research:
 
-![alt text](https://raw.githubusercontent.com/rogertrullo/rogertrullo.github.io/master/images/itksnap_ct.png).
+![alt text](https://raw.githubusercontent.com/rogertrullo/rogertrullo.github.io/master/images/itksnap_ct.png)
 
 So to wrap up, you'd basically need three things:
 -Python
 -ITKSNAP
 -Images
 
-Now, 
+Now, in Python, you are going to need a famous package that will allow you to do a lot of vectorized operations just as in matlab. It is called [Numpy](http://www.numpy.org/), and with it, you can use all the operations that you can do in matlab like sliceing arrays, linear algebra operations, etc. [Here](https://docs.scipy.org/doc/numpy-dev/user/numpy-for-matlab-users.html) you can find a document that will help you with numpy if you come from a matlab background.
+Why is this important? well, these medical images are represented as 3D arrays, and with nnumpy you can easily manipulate them, and do any kind of operation you want. To do that, first we use the ITK wrapper for Python which is called [SimpleITK](https://itk.org/Wiki/SimpleITK/GettingStarted). Here's a code you'd use for reading an image and storing it in a 3d numy array:
+```python
+import SimpleITK as sitk
+import numpy as np
+
+itkimg=sitk.ReadImage("path/to/image")
+npimg=sitk.GetArrayFromImage(itkimage)
+print npimg.shape
+```
 
 
 
