@@ -82,7 +82,7 @@ plt.show()
 ```
 
 
-![png](svm_files/svm_4_0.png)
+![png](_posts/svm_files/svm_4_0.png)
 
 
 
